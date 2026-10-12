@@ -4,7 +4,7 @@
  * Lab: 8 - Functions
  * Description: Tracks the spare fuses in a maintenance cabinet and removes
  *              one fuse when the technician reports using it in a repair.
- * Due Date: [Date]
+ * Due Date: October 12, 2026
  */
 
 #include <iostream>                                      // Provides cin, cout, and endl
@@ -59,14 +59,6 @@ void removeOneFuse(int &fuseCount) {                     // Defines a function t
 }                                                        // Ends the inventory-update function
 
 /*
- * Test cases:
- * | Start | Response | Expected remaining | Observed remaining |
- * |-------|----------|--------------------|--------------------|
- * |   4   |    Y     |         3          |         3          |
- * |   4   |    y     |         3          |         3          |
- * |   4   |    N     |         4          |         4          |
- * |   0   |    Y     |  0 (with warning)  |  0 (with warning)  |
- *
  * Analysis:
  * Only removeOneFuse needs &, because it is the only function whose work
  * must survive after it returns: subtracting a fuse has to change the

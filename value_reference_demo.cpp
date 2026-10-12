@@ -4,7 +4,7 @@
  * Lab: 8 - Functions
  * Description: Demonstrates the difference between pass-by-value and
  *              pass-by-reference using a safety-inspection counter.
- * Due Date: [Date]
+ * Due Date: October 12, 2026
  */
 
 #include <iostream>                                      // Provides cin, cout, and endl
@@ -38,18 +38,6 @@ void recordCompletedInspection(int &completedInspections) { // Defines a functio
 }                                                        // Ends the reference-parameter function
 
 /*
- * Prediction (input 4):
- *   Projected count: 5
- *   After projection: 4
- *   After recording: 5
- *
- * Observed output (input 4):
- *   Enter completed inspections: 4
- *   Projected count: 5
- *   After projection: 4
- *   Inspection recorded.
- *   After recording: 5
- *
  * Explanation:
  * showProjectedCount(completedInspections) receives its parameter by value,
  * so the function gets its own copy of the number 4. The increment changes

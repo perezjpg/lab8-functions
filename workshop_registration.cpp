@@ -4,7 +4,7 @@
  * Lab: 8 - Functions
  * Description: Manages seat registrations and cancellations for a robotics
  *              workshop with a repeating menu that respects seat capacity.
- * Due Date: [Date]
+ * Due Date: October 12, 2026
  */
 
 #include <iostream>                                      // Provides cin, cout, and endl
@@ -81,16 +81,6 @@ void cancelRegistration(int &availableSeats, int maxSeats) { // Defines a functi
 }                                                        // Ends the cancellation function
 
 /*
- * Test cases:
- * | Capacity | Sequence of options            | Expected final | Observed final |
- * |----------|--------------------------------|----------------|----------------|
- * |    1     | 1, 1, 2, 2, 3                  |       1        |       1        |
- * |          |  (2nd register -> "full",      |                |                |
- * |          |   2nd cancel -> "no regs")     |                |                |
- * |    2     | 1, 2, 3                        |       2        |       2        |
- * |    2     | 7 (invalid), 3                 |  2 + "Invalid  |  2 + "Invalid  |
- * |          |                                |    option"     |    option"     |
- *
  * Analysis:
  * availableSeats is passed by reference to registerAttendee and
  * cancelRegistration because both actions must leave a permanent change in
